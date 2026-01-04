@@ -28,6 +28,50 @@ p { max-width: 700px; margin: 0 auto 40px; font-size: 20px; line-height: 1.6; }
 .button:hover { background-color: #8cc1f9; }
 .view { display: none; } .view.active { display: block; }
 label { display: block; text-align: left; max-width: 700px; margin: 6px auto; }
+.view.test {
+    text-align: left;
+}
+
+.view.test p,
+.view.test h2,
+.view.test form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+.view.test .answers,
+.view.test select,
+.view.test label {
+    margin-left: 10px;
+}
+
+.view.test p {
+    margin: 0 0 10px;
+}
+
+.view.test p strong {
+    margin-bottom: 6px;
+}
+
+.view.test input,
+.view.test select {
+    margin-top: 4px;
+    margin-bottom: 18px;
+}
+
+.view.test label {
+    margin: 4px 0 14px;
+}
+
+.view.test .answers label {
+    margin: 4px 0;
+}
+
+.view.test .cbi-question {
+    margin-bottom: 30px;
+}
+
+
 </style>
 </head>
 <body>
@@ -55,7 +99,7 @@ Testi ir anonīmi un var tikt veikti vairākkārt. Testu beigās autore dalās a
 <button class="button" onclick="switchView('home')">Atpakaļ</button>
 </div>
 
-<div id="psqi" class="view">
+<div id="psqi" class="view test">
 <h2>Pitsburgas miega kvalitātes indekss (PSQI)</h2>
 <p>Šie jautājumi ir saistīti ar jūsu ierastajiem gulēšanas paradumiem tikai pēdējā mēneša (pēdējo 30 dienu) laikā. Jums jānorāda visprecīzākā atbilde attiecībā uz lielāko daļu dienu un nakšu pēdējā mēnesī.<br> Lūdzu, atbildiet uz visiem jautājumiem.</p>
 <form id="psqiForm">
@@ -150,7 +194,7 @@ Testi ir anonīmi un var tikt veikti vairākkārt. Testu beigās autore dalās a
 
 </form>
 </div>
-<div id="cbi" class="view">
+<div id="cbi" class="view test">
     <h2>Kopenhāgenas izdegšanas indekss (CBI)</h2>
     <p>
         Kopenhāgenas izdegšanas indekss (CBI) palīdz noteikt profesionālās izdegšanas līmeni.
